@@ -1,6 +1,14 @@
 html {
     font-family: sans-serif;
   }
+
+  #bloco{
+    justify-self: center;
+    padding: 7px;
+    background-color:blanchedalmond;
+    width: 400px;
+    border-radius: 10%;
+  }
   
   #tipoEvento{
     margin-top: 30px;
@@ -26,7 +34,9 @@ html {
     margin: 1%;
   }
   table {
-    margin-left: 1%;
+    margin-top: 30px;
+    width: 400px;
+    justify-self: center;
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
