@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="tipoEvento">
+<a>Selecione o tipo de evento: </a>
+<select name="addEvento" id="addEvento">
+    <option value="teatro">Teatro</option>
+    <option value="cinema">Cinema</option>
+    <option value="show">Show</option>
+  </select>
+</div> 
+
+<div id="dataEvento">
+<a>Informe a data que deseja ir: </a>
+<input id="date" type="date" required/>
+</div>
+
+<div id="custoEvento">
+<a>Informe o valor do ingresso:</a>
+<input id="valor" type="number" required>
+</div>
+
+<div>
+    <button id="adiciona" class="btn" >Verificar</button>
+</div>
+
+
+<div></div>
+<table id="tabela">
+   
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Tipo</th>
+        <th>Data</th>
+        <th>Valor (R$)</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
