@@ -6,7 +6,7 @@ html {
     justify-self: center;
     padding: 7px;
     background-color:blanchedalmond;
-    width: 400px;
+    width: 600px;
     border-radius: 10%;
   }
   
@@ -16,12 +16,12 @@ html {
     padding: 5px;
   }
 
-  #dataEvento{
+  #data{
     margin-left: 1%;
     padding: 5px;
   }
 
-  #custoEvento{
+  #preco{
     margin-left: 1%;
     padding: 5px;
   }
@@ -31,7 +31,8 @@ html {
     background-color: #1223ff;
     border-radius: 15%;
     padding: 3px;
-    margin: 1%;
+    margin: 2%;
+    
   }
   table {
     margin-top: 30px;

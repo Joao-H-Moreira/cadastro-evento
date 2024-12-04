@@ -10,52 +10,58 @@
 
 <section id="bloco"> 
 <div id="tipoEvento">
-<a>Selecione o tipo de evento: </a>
-<select name="addEvento" id="addEvento">
+<label for="evento">Escolha o seu Evento:</label>
+<select name="addEvento" id="evento">
     <option value="teatro">Teatro</option>
     <option value="cinema">Cinema</option>
-    <option value="show">Show</option>
+    <option value="Show">Show</option>
   </select>
 </div> 
 
-<div id="dataEvento">
-<a>Informe a data que deseja ir: </a>
+<div id="data">
+<label>Informe a data que deseja ir: </label>
 <input id="date" type="date" required/>
 </div>
 
-<div id="custoEvento">
-<a>Informe o valor do ingresso:</a>
-<input id="valor" type="number" required>
+<div id="preco">
+  <label for="preco">Digite o Preço:</label>
+  <input type="number" name="preco" id="preco" placeholder="preco">
 </div>
 
-<div>
-    <button id="adiciona" class="btn" >Verificar</button>
+</div >
+<button id="adiciona" class="cadastrar">Cadastrar</button>
 </div>
-</section>  
 
-<div></div>
 <table class="tabela">
    
     <thead>
       <tr>
         <th>ID</th>
-        <th>Tipo</th>
+        <th>Evento</th>
+        <th>Preço</th>
         <th>Data</th>
-        <th>Valor (R$)</th>
+        <th>Ações</th>
       </tr>
     </thead>
-
-
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-
-    </tbody>
 </table>
+
+<div id="alterarEventos" class="oculto">
+  <div class="container-oculto">
+      <div class="flex">
+          <label for="eventoAtualizado">Alterar evento:</label>
+          <select name="eventoAtualizado" id="eventoAtualizado">
+            <option value="Teatro">Teatro</option>
+            <option value="Cinema">Cinema</option>
+            <option value="Show">Show</option>
+          </select>
+      </div>
+      <div class="flex">
+          <label for="precoAtualizado">Alterar preço:</label>
+          <input type="text" name="preco" id="precoAtualizado" placeholder="preco">
+      </div>
+      <button  id="adiciona" class="atualizar">Atualizar</button>
+  </div>
+</div>
 
 <script src="script.js"></script>
 
