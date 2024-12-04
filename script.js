@@ -9,25 +9,25 @@ btn.addEventListener("click", () => pegarDados());
 
 function pegarDados() {
   let evento = document.querySelector("#evento").value;
-  let preco = document.querySelector("#preco").value;
   let data = document.querySelector("#data").value;
-  cadastrar(evento, preco, data);
+  let preco = document.querySelector("#preco").value;
+  cadastrar(evento, data, preco);
 }
 
-function cadastrar(evento, preco) {
+function cadastrar(evento, preco, data) {
   let tabela = document.querySelector(".tabela");
-  let tabelaCriada = criarDado(evento, preco, data);
+  let tabelaCriada = criarDado(evento, data, preco);
 
   tabela.appendChild(tabelaCriada);
 
 }
 
-function criarDado(evento, preco, data) {
+function criarDado(evento, data, preco) {
   let tr = document.createElement("tr");
   let tdId = document.createElement("td");
   let tdEvento = document.createElement("td");
-  let tdPreco = document.createElement("td");
   let tdData = document.createElement("td");
+  let tdPreco = document.createElement("td");
   let tdAcao = document.createElement("td");
 
   tr.id = id;
@@ -35,10 +35,10 @@ function criarDado(evento, preco, data) {
   tdId.innerText = id;
   id++;
   tdEvento.innerText = evento;
-  tdPreco.innerText = preco;
   tdData.innerText = data;
-  array.push({'id': id, 'envento':evento, 'preco':preco});
-  tr.append(tdId, tdEvento, tdPreco, tdData, tdAcao);
+  tdPreco.innerText = preco;
+  array.push({'id': id, 'evento':evento, 'preco':preco,'data': data});
+  tr.append(tdId, tdEvento, tdData, tdPreco, tdAcao);
   return tr;
 }
 
